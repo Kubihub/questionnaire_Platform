@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Customer Survey</h2>
+      <h4>
+        We would be grateful if you would take some time to answer some
+        questions about the services of Ghana Water Company Limited. Your
+        participation in this survey is greatly appreciated, as your feedback
+        will help us improve the service delivery of Ghana Water.
+      </h4>
+      <form id="surveyForm">
+        <div class="question">
+          <label>1. Do you have GWCL water connection? </label><br />
+          <input
+            type="radio"
+            name="fieldWorker"
+            value="yes"
+            onclick="toggleQuestions(true)"
+          />
+          Yes
+          <input
+            type="radio"
+            name="fieldWorker"
+            value="no"
+            onclick="toggleQuestions(false)"
+          />
+          No
+        </div>
+
+        <div id="fieldQuestions" class="page" id="">
+          <div>
+            <h3>Section: Water Quality</h3>
+
+            <div class="question">
+              <label
+                >2. To what extent are you satisfied with the level of PARTICLES
+                in the water you receive from the pipe?</label
+              ><br />
+              <input type="radio" name="challenges" value="WaterShortage" />
+              Very Unsatisfied<br />
+              <input type="radio" name="challenges" value="Communication" />
+              Unsatisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Neutral <br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Satisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Very Satisfied<br />
+            </div>
+            <div class="question">
+              <label
+                >3. To what extent are you satisfied with the COLOUR of the
+                water you receive from the GWCL? </label
+              ><br />
+              <input type="radio" name="challenges" value="WaterShortage" />
+              Very Unsatisfied<br />
+              <input type="radio" name="challenges" value="Communication" />
+              Unsatisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Neutral <br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Satisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Very Satisfied<br />
+            </div>
+            <div class="question">
+              <label
+                >4. To what extent are you satisfied with the TASTE of the water
+                you receive from the GWCL? </label
+              ><br />
+              <input type="radio" name="challenges" value="WaterShortage" />
+              Very Unsatisfied<br />
+              <input type="radio" name="challenges" value="Communication" />
+              Unsatisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Neutral <br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Satisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Very Satisfied<br />
+            </div>
+            <div class="question">
+              <label
+                >5. To what extent are you satisfied with the SMELL of the water
+                you receive from the GWCL? </label
+              ><br />
+              <input type="radio" name="challenges" value="WaterShortage" />
+              Very Unsatisfied<br />
+              <input type="radio" name="challenges" value="Communication" />
+              Unsatisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Neutral <br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Satisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Very Satisfied<br />
+            </div>
+            <button type="button" class="btn" onclick="nextPage(2)">
+              Next
+            </button>
+          </div>
+          <div id="page2" class="page hidden">
+            <h3>Section: Water Distribution</h3>
+            <div class="question">
+              <label
+                >6. To what extent are you satisfied with the PRESSURE of water
+                from the GWCL?</label
+              ><br />
+              <input type="radio" name="challenges" value="WaterShortage" />
+              Very Unsatisfied<br />
+              <input type="radio" name="challenges" value="Communication" />
+              Unsatisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Neutral <br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Satisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Very Satisfied<br />
+            </div>
+            <div class="question">
+              <label
+                >7. To what extent are you satisfied with the number of days you
+                receive water from GWCL? </label
+              ><br />
+              <input type="radio" name="challenges" value="WaterShortage" />
+              Very Unsatisfied<br />
+              <input type="radio" name="challenges" value="Communication" />
+              Unsatisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Neutral <br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Satisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Very Satisfied<br />
+            </div>
+            <div class="question">
+              <label
+                >8. To what extent are you satisfied with the RELIABILITY of
+                water supply by the GWCL? </label
+              ><br />
+              <input type="radio" name="challenges" value="WaterShortage" />
+              Very Unsatisfied<br />
+              <input type="radio" name="challenges" value="Communication" />
+              Unsatisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Neutral <br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Satisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Very Satisfied<br />
+            </div>
+            <div class="question">
+              <label
+                >9. How many days a week do you have water supply? (Enter a
+                number between 0-7)</label
+              ><br />
+              <input
+                type="number"
+                name="daysPerWeek"
+                min="0"
+                max="7"
+                required
+              />
+            </div>
+            <div class="question">
+              <label
+                >10. How many hours a day do you have water supply on the days
+                that you have water? </label
+              ><br />
+              <input
+                type="number"
+                name="hourPerDay"
+                min="0"
+                max="24"
+                required
+              />
+            </div>
+            <div class="question">
+              <label
+                >11. Do you receive any information from Ghana Water on the days
+                and times you do not have water supply? </label
+              ><br />
+              <input type="radio" name="challenges" value="WaterShortage" />
+              Yes, always <br />
+              <input type="radio" name="challenges" value="Communication" />
+              Yes, sometimes <br />
+              <input type="radio" name="challenges" value="Equipment" />
+              No <br />
+            </div>
+            <div class="question">
+              <label
+                >12. Apart from GWCL, which of the following water sources do
+                you use? (Select all that apply)</label
+              ><br />
+              <input type="checkbox" name="waterSources" value="Tanker" />
+              Tanker supply/Vendor provided<br />
+              <input type="checkbox" name="waterSources" value="PublicTap" />
+              Public tap/Standpipe<br />
+              <input type="checkbox" name="waterSources" value="Borehole" />
+              Borehole/Pump/Tube well<br />
+              <input
+                type="checkbox"
+                name="waterSources"
+                value="ProtectedWell"
+              />
+              Protected well<br />
+              <input type="checkbox" name="waterSources" value="Others" />
+              Others (please specify):
+              <input type="text" name="otherWaterSource" /><br />
+              <input type="checkbox" name="waterSources" value="None" />
+              None<br />
+            </div>
+            <button type="button" class="btn" onclick="prevPage(2)">
+              Previous
+            </button>
+            <button type="button" class="btn" onclick="nextPage(4)">
+              Next
+            </button>
+          </div>
+          <div id="page4" class="page hidden">
+            <h3>Section: Meter reading</h3>
+            <div class="question">
+              <label
+                >13. To what extent are you satisfied with how often your meter
+                is read? </label
+              ><br />
+              <input type="radio" name="challenges" value="WaterShortage" />
+              Very Unsatisfied<br />
+              <input type="radio" name="challenges" value="Communication" />
+              Unsatisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Neutral <br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Satisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Very Satisfied<br />
+            </div>
+            <div class="question">
+              <label
+                >14. To what extent are you satisfied with the attitude of the
+                meter reader? </label
+              ><br />
+              <input type="radio" name="challenges" value="WaterShortage" />
+              Very Unsatisfied<br />
+              <input type="radio" name="challenges" value="Communication" />
+              Unsatisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Neutral <br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Satisfied<br />
+              <input type="radio" name="challenges" value="Equipment" />
+              Very Satisfied<br />
+            </div>
+
+            <h3>Section: Billing and collection</h3>
+            <div class="question">
+              <label
+                >15. What is your preferred mode of paying your water bill?
+                (Select all that apply)</label
+              ><br />
+              <input type="checkbox" name="waterSources" value="Tanker" /> Post
+              Office <br />
+              <input type="checkbox" name="waterSources" value="PublicTap" />
+              GWCL district office or Pay Point <br />
+              <input type="checkbox" name="waterSources" value="Borehole" />
+              Mobile Money <br />
+              <input
+                type="checkbox"
+                name="waterSources"
+                value="ProtectedWell"
+              />
+              Online payment <br />
+              <input
+                type="checkbox"
+                name="waterSources"
+                value="ProtectedWell"
+              />
+              Point Of Sale (POS) or ATM system <br />
+              <input
+                type="checkbox"
+                name="waterSources"
+                value="ProtectedWell"
+              />
+              GWCL Agent <br />
+            </div>
+          </div>
+
+          <div>
+            <h3>Section: Complaints</h3>
+            <div class="question">
+              <label
+                >16. Have you made complaints over the last 3 months? </label
+              ><br />
+              <input type="radio" name="complaints" value="yes" />
+              Yes
+              <input type="radio" name="complaints" value="no" />
+              No
+            </div>
+          </div>
+          <button type="button" class="btn" onclick="prevPage(3)">
+            Previous
+          </button>
+          <button type="button" class="btn" onclick="nextPage(5)">Next</button>
+          <div class="question">
+            <label
+              >17. What kind of complaint did you report? (Select all that
+              apply)</label
+            ><br />
+            <input type="checkbox" name="waterSources" value="Tanker" /> Water
+            quality (turbidity, small and taste) <br />
+            <input type="checkbox" name="waterSources" value="PublicTap" />
+            Payment is not reflected on bill <br />
+            <input type="checkbox" name="waterSources" value="Borehole" />
+            Leakage <br />
+            <input type="checkbox" name="waterSources" value="ProtectedWell" />
+            Change of meter <br />
+            <input type="checkbox" name="waterSources" value="ProtectedWell" />
+            Customer data <br />
+            <input type="checkbox" name="waterSources" value="ProtectedWell" />
+            Cost of water <br />
+            <input type="checkbox" name="waterSources" value="ProtectedWell" />
+            Price of the meter <br />
+            <input type="checkbox" name="waterSources" value="ProtectedWell" />
+            Water Consumption on your bill <br />
+            <input type="checkbox" name="waterSources" value="ProtectedWell" />
+            Other (please specify) <br />
+          </div>
+          <div class="question">
+            <label>18. How did you report your complaint? </label><br />
+            <input type="checkbox" name="waterSources" value="Tanker" /> By
+            telephone / call centre <br />
+            <input type="checkbox" name="waterSources" value="PublicTap" />
+            By e-mail <br />
+            <input type="checkbox" name="waterSources" value="Borehole" />
+            By Whatsapp <br />
+            <input type="checkbox" name="waterSources" value="ProtectedWell" />
+            GWCL Office <br />
+            <input type="checkbox" name="waterSources" value="ProtectedWell" />
+            Ghana Water App <br />
+            <input type="checkbox" name="waterSources" value="ProtectedWell" />
+            By other social media platform <br />
+          </div>
+          <div class="question">
+            <label
+              >19. To what extent are you satisfied with the channels of
+              reporting complaints? </label
+            ><br />
+            <input type="radio" name="challenges" value="WaterShortage" />
+            Very Unsatisfied<br />
+            <input type="radio" name="challenges" value="Communication" />
+            Unsatisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Neutral <br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Satisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Very Satisfied<br />
+          </div>
+          <div class="question">
+            <label
+              >20.To what extent are you satisfied with the promptness of having
+              the complaints resolved? </label
+            ><br />
+            <input type="radio" name="challenges" value="WaterShortage" />
+            Very Unsatisfied<br />
+            <input type="radio" name="challenges" value="Communication" />
+            Unsatisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Neutral <br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Satisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Very Satisfied<br />
+          </div>
+          <div class="question">
+            <label
+              >21. To what extent are you satisfied with the attitude of the
+              employee who received your complaint? </label
+            ><br />
+            <input type="radio" name="challenges" value="WaterShortage" />
+            Very Unsatisfied<br />
+            <input type="radio" name="challenges" value="Communication" />
+            Unsatisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Neutral <br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Satisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Very Satisfied<br />
+          </div>
+          <div class="question">
+            <label
+              >22. To what extent are you satisfied with the feedback provided
+              to your complaint? </label
+            ><br />
+            <input type="radio" name="challenges" value="WaterShortage" />
+            Very Unsatisfied<br />
+            <input type="radio" name="challenges" value="Communication" />
+            Unsatisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Neutral <br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Satisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Very Satisfied<br />
+          </div>
+          <div class="question">
+            <label
+              >23. To what extent are you satisfied with the COST of the water
+              you receive from the GWCL? </label
+            ><br />
+            <input type="radio" name="challenges" value="WaterShortage" />
+            Very Unsatisfied<br />
+            <input type="radio" name="challenges" value="Communication" />
+            Unsatisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Neutral <br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Satisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Very Satisfied<br />
+          </div>
+          <div class="question" class="form-check">
+            <label
+              >24.To what extent are you satisfied with the OVERALL SERVICE
+              DELIVERY of the GWCL? </label
+            ><br />
+            <input type="radio" name="challenges" value="WaterShortage" />
+            Very Unsatisfied<br />
+            <input type="radio" name="challenges" value="Communication" />
+            Unsatisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Neutral <br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Satisfied<br />
+            <input type="radio" name="challenges" value="Equipment" />
+            Very Satisfied<br />
+          </div>
+          <div class="question">
+            <label
+              >Please use the space below to provide any additional comments </label
+            ><br />
+            <input type="text" name="officeWork" value="" />
+          </div>
+        </div>
+
+        <div id="nonFieldQuestions" class="page hidden">
+          <div class="question">
+            <label>Enter Your Contact </label><br />
+            <input type="text" name="officeWork" value="" />
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- <form>
+  <fieldset disabled>
+    <legend>Disabled fieldset example</legend>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Disabled select menu</label>
+      <select id="disabledSelect" class="form-select">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+        <label class="form-check-label" for="disabledFieldsetCheck">
+          Can't check this
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form> -->
+  </body>
+</html>
